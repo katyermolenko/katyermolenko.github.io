@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>In-Beauty</title>
+	<meta charset="utf-8">
+	<meta name="description" content="In-Beauty page 1">
+	<link rel="stylesheet" type="text/css" href="style/reset-style.css">
+	<link rel="stylesheet" href="style/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="style/style-page1.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script src="scripts/script-page1.js"></script>
+
+</head>
+<body>
+<header>
+	<div class="search">
+		<form class="search-box">
+  		<input type="text" placeholder="Искать здесь...">
+  		<button class = "butHeader" type="submit"></button>
+		</form>
+	</div>
+
+	<div id="head">
+		<div class="image">
+			<a href="index.html"><img src="images/logo-final1.png" title="HOME" alt="In-Beauty"></a>
+		</div>
+			
+		<nav class="menu">
+			<h1>КОСМЕТИКА ПО ИНДИВИДУАЛЬНЫМ РЕЦЕПТАМ</h1>
+			<div class="image_line">
+			</div>
+			<ul class="topmenu">
+				<li><a href="index.html">ГЛАВНАЯ</a></li>
+				<li class="menu-item"><a href=“#”>НАША ИСТОРИЯ</a>
+					<ul class="submenu">
+						<li><a href="#">О НАС</a></li>
+    					<li><a href="#">ПРИНЦИП РАБОТЫ</a></li>
+   	 					<li><a href="#">КОНТАКТЫ</a></li>
+   	 				</ul>
+   	 			</li>
+				<li class="menu-item"><a href=“#”>КОСМЕТИЧЕСКАЯ ЛАБОРАТОРИЯ</a>
+					<ul class="submenu">
+						<li><a href="#">УХОД ЗА КОЖЕЙ</a></li>
+    					<li><a href="#">УХОД ЗА ВОЛОСАМИ</a></li>
+   	 					<li><a href="#">УХОД ЗА ТЕЛОМ</a></li>
+   	 				</ul>
+   	 			</li>
+				<li class="menu-item"><a href=“#”>КНИГА РЕЦЕПТОВ</a>
+					<ul class="submenu">
+						<li><a href="#">УХОД ЗА КОЖЕЙ</a></li>
+    					<li><a href="#">УХОД ЗА ВОЛОСАМИ</a></li>
+   	 					<li><a href="#">УХОД ЗА ТЕЛОМ</a></li>
+   	 				</ul>
+   	 			</li>
+				<li class="menu-item"><a href=“#”>СЛОВАРЬ ИНГРЕДИЕНТОВ</a>
+					<ul class="submenu">
+						<li><a href="#">УВЛАЖНЯЮЩИЕ</a></li>
+    					<li><a href="#">ПРОТИВОВОСПАЛИТЕЛЬНЫЕ</a></li>
+   	 					<li><a href="#">АНТИОКСИДАНТЫ</a></li>
+   	 				</ul>
+   	 			</li>
+			</ul>
+		</nav> 
+	</div>
+
+</header>
+
+
+<div>
+
+<h2>РЕГИСТРАЦИЯ ЗА 30 СЕКУНД!</h2>
+<p class="first">почему стоит пройти регистрацию</p>
+	<div class ="second">
+	<ol>
+		<li>Вы участвуете в дисконтной программе;</li>
+		<li>Получаете спецпредложения;</li>
+		<li>Создаете свой индивидуальный магазин косметики.
+</li>
+	</ol>
+</div>
+
+	<form class="fff">
+
+		<input class="tooltip fio" title = "Введите Фимилию Имя и Отчество" type="text" placeholder="ФИО" >
+		<input  class="tooltip" title = "пример: info@gmail.com" type="email" name="myemail" placeholder="e-mail">
+		<input class="tooltip" title = "Пароль должен содержать буквы или цифры" type="password" maxlength="6" id="myInput" placeholder="Введите пароль" required>
+		<input type="password" maxlength="6" id="myInput2" placeholder="Повторите пароль" required>
+		<button type="button" id="eye"><img src="images/eye2.png" id = "close" alt="eye"/></button>
+		<div id = "errorBlock"></div>
+		
+		<p>Пол:</p>
+		<div class="sex">
+
+		<input type="radio" name="sex" id="sex1"> 
+		<label for="sex1">Муж</label>
+		</div>
+		<div class="sex">
+		<input type="radio" name="sex" id="sex2">
+		<label for="sex2">Жен</label>
+		</div>
+
+		
+		<div class="age">
+			<p>Ваш возраст</p>
+			<select size="1">
+			<option>менее 25</option>
+			<option>26-35</option>
+			<option>36-45</option>
+			<option>46-55</option>
+			<option>более 55</option>
+			</select>
+		</div>
+		
+		<input type="checkbox" name="check3" id="check3"> 
+		<label for="check3">хочу получать рассылку о новых выпусках косметики In-Beauty</label>
+		<p class="komment">Несколько слов о себе:</p>
+		<textarea id="tooltipKomment" title="In-Beauty" rows="5" cols="30"></textarea>
+
+		<div>
+		<input type="Submit" id = "valid" value="ЗАРЕГЕСТИРОВАТЬСЯ">
+		<input type="reset" value="СБРОС">
+		</div>
+		
+</form>
+</div>
+
+<footer>
+		<div class="footer1">
+			<div class="foot1">
+			<p class="stay">ОСТАВАЙТЕСЬ С НАМИ НА СВЯЗИ</p>
+				<div class="socImage">
+					<a class="tooltipSoc" href="https://www.facebook.com/" title="Переход на сайт facebook" target="_blank"><img src="images/facebook.png" alt="значок facebook"></a>	
+ 					<a class="tooltipSoc" href="https://www.pinterest.com" title="Переход на сайт pinterest" target="_blank"><img src="images/Pin.png" alt="значок pinterest"></a>
+ 					<a class="tooltipSoc" href="https://www.vk.com" title="Переход на сайт VK" target="_blank"><img src="images/VK.png" alt="значок VK"></a>
+ 					<a class="tooltipSoc" href="https://www.instagramm.com" title="Переход на сайт instagramm" target="_blank"><img src="images/Instagramm.png" alt="значок instagramm"></a>
+ 				</div>
+ 			<p class="stay">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</p>
+			<ul class="footerList">
+				<li><a href=“#”>На главную</a></li>					
+				<li><a href=“#”>Карта сайта</a></li>
+				<li><a href=“#”>Политика конфиденциальности</a></li>
+				<li><a href=“#”>Ваши вопросы</a></li>
+			</ul>
+ 		</div>
+
+ 		<div class="footContact">
+ 			<p class="stay">КОНТАКТЫ</p>
+ 			<p class="in-BEAUTY">салон-магазин <br>IN-BEAUTY</p>
+			<p class="adress">ул.Смирнова, 2 <br>г.Минск 220089 <br>Беларусь <br>+375 29 615 50 49 <br>Часы работы: <br>пн-вс 9:00 - 20:00</p>
+ 		</div>
+ 		
+ 		<div class="footerForm">
+ 			<form>
+ 				<p><input type="email" name="myemail" placeholder="Ваш адрес электронной почты"></p>
+ 				<p><input type="checkbox" name="check1" id="check1"> 
+				<label for="check1">хочу получать рассылку о новых выпусках косметики In-Beauty</label></p>
+ 			</form>
+ 			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A60a7f0fe34b4e3da157a8f81b3f89995949a070b8a0df7edfc19b99d7e737b90&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+ 		</div>
+ 	</div>
+ 	<div class="footer2">
+ 		 	Copyright © 2019 in-BEAUTY. Все права защищены.
+ 	</div>
+	</footer> 
+
+	<script id="tooltipTemplate" type="text/template">
+		<h3>"Нет плохой косметики - есть косметика, плохо подобранная"</h2>
+		<hr>
+		<p>Мы приветствуем вас в нашем клубе "In-Beauty"! Расскажите о себе, а мы сделаем все возможное, чтобы косметика Вас никогда не разочаровала.</p>
+		<p><img class = "regLogo" src = "images/logo-final1.png" alt="In-Beauty"></p>
+	</script>
+</body>
+</html>

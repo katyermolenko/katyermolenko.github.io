@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Движение за курсором</title>
+
+<style>
+html,body 
+{	height:100%;
+	min-height: 100%;
+}
+
+body {
+	margin:0;
+	padding:0;
+	font: 15px Tahoma;
+	color:white;
+    }
+#top{
+	width:100%;
+	background: #222;
+	text-align:center;
+	height:35px;
+	line-height:35px;
+	}
+#top a{color:#00FF00;text-decoration:none;}
+
+ 
+ #owl{
+ 	margin:auto 0;
+ } 
+
+#owl{
+ 	background: url(owl.png) center top no-repeat;
+	height: 600px;
+
+	/*position: absolute;*/
+	}
+
+ #owl{
+	position: relative;
+	width: 100%;
+}
+
+.owl-eye {
+	position: absolute;
+	display: none;
+	width: 120px;
+	height: 120px;
+}
+
+.owl-eyeball {
+	position: absolute;
+	left: 22.5px;
+	top: 24.5px;
+	width: 64px;
+	height: 64px;
+	background-image: url(eye1.png);
+}
+
+#owl-eye-left {
+	top: 260px;
+	left: 50%;
+	margin-left:-160px;
+}
+#owl-eye-right {
+	top: 260px;
+	left: 50%;
+	margin-left:20px;
+}
+ 
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="top">
+<center><h1>Зрачки Совы следят за курсором. Водите курсором по странице вокруг совы :) </h1></center>
+
+			<div id="owl">
+					<div id="owl-eye-left" class="owl-eye">
+		 				<div class="owl-eyeball"></div>
+		 			</div>
+		 			<div id="owl-eye-right" class="owl-eye">
+		 				<div class="owl-eyeball"></div>
+		 			</div>
+		 		</div>
+
+
+
+<script type="text/javascript">
+		var el1 = $('#owl-eye-left'), eyeBall1 = el1.find('div');
+		var el2 = $('#owl-eye-right'), eyeBall2 = el2.find('div');
+		el1.show();
+		el2.show();
+		var x1 = el1.offset().left + 37, y1 = el1.offset().top + 25;
+		var r = 10, x , y, x2, y2, isEyeProcessed = false;
+		$('html').mousemove(function(e) {
+			if (!isEyeProcessed) {
+		 		isEyeProcessed = true;
+		 		var x2 = e.pageX, y2 = e.pageY;
+		 		y = ((r * (y2 - y1)) / Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1))) + y1;
+				x = (((y - y1) * (x2 - x1)) / (y2 - y1)) + x1;
+		 		eyeBall1.css({
+		 			marginTop: (y - y1 + 1) + 'px',
+		 			marginLeft: (x - x1) + 'px'
+		 		});
+		 		eyeBall2.css({
+		 			marginTop: (y - y1 + 1) + 'px',
+		 			marginLeft: (x - x1) + 'px'
+		 		});
+		 		isEyeProcessed = false;
+		 	}
+		});
+</script>
+</body>
+</html>
