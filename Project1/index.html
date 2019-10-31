@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Сайт In-Beauty</title>
+	<meta charset="utf-8">
+	<meta name="description" content="In-Beauty">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/reset-style.css">
+	<link rel="stylesheet" href="style/jquery-ui.min.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link rel="stylesheet" href="animate.css/animate.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600&display=swap&subset=cyrillic" >
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap&subset=cyrillic" >
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="player/css/audioplayer.css" />
+	<script src="scripts/jquery-1.7.2.min.js"></script>
+	<script src="scripts/jquery-ui.min.js"></script>
+	<script src="scripts/lib/three.min.js"></script>
+	<script src="scripts/lib/GLTFLoader.js"></script>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/script3d.js"></script>
+	<script src="player/js/audioplayer.js"></script>   
+
+</head>
+<body>
+	<div id="before-load">
+ 		<div class="gif"></div>
+	</div>
+
+	<div class="head animated slideInDown">
+		<div class="image_logo">
+			<img src="images/logo.png" title="Лого" alt="In-Beauty">
+		</div>
+
+		<div class="menu">
+				<ul>
+					<li><a href="#howWork">КАК ЭТО РАБОТАЕТ</a>	</li>
+		 			<li><a href="#develop">РАЗРАБОТКА on-line</a></li>
+		 			<li><a href="#action">ДЕЙСТВИЕ</a></li>
+		 			<li><a href="#result">РЕЗУЛЬТАТ</a></li>
+		 			<li><a href="#contact">КОНТАКТЫ</a></li>
+	 			</ul>
+	 		</div>
+			<div class="socImage">
+				<ul>
+					<li><a class = "tooltipSoc" href="https://www.facebook.com/" title="Переход на сайт facebook" target="_blank"><img src="images/facebook.png" alt="facebook"></a></li>
+		 			<li><a class = "tooltipSoc" href="https://www.twitter.com/" title="Переход на сайт twitter" target="_blank"><img src="images/twitter.png" alt="twitter"></a></li>
+		 			<li><a class = "tooltipSoc" href="https://www.instagramm.com" title="Переход на сайт instagramm" target="_blank"><img src="images/instagramm.png" alt="instagramm"></a></li>
+		 			<li><a class = "tooltipSoc" href="https://www.linkedin.com" title="Переход на сайт linkedin" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a></li>
+	 			</ul>
+	 		</div>
+ 	</div>
+		
+	<div class = "back_1">
+
+		<div>
+			<div class="girl"> 
+				<img src="images/girl.jpg" alt="Девушка">
+			</div>
+			<div class="text_main">
+				<div class="divc1"><canvas class="c1"></canvas></div>
+					<div class="cosmLab">
+						<h1>КОСМЕТИЧЕСКАЯ ЛАБОРАТОРИЯ</h1>
+					</div>
+			</div>
+			
+		
+			<div class="advert">
+				<p>разрабатываем косметику<span> индивидуально</span></p>
+			</div>
+
+			<div class ="molecule2">
+				<img src="images/molecule2.png" alt="молекула" class="mol">
+			</div>
+		</div>
+	</div>
+
+	<div class = "back_2">
+		<div>
+			<h3><a name="howWork"></a>КАК ЭТО РАБОТАЕТ</h3>
+		</div>
+		
+		<div class="howWork1">
+			<div class="text">
+				<div class ="visite">
+					<img src="images/calendar1.png" alt="календарь" class="animated">
+				</div>
+				<h4>ШАГ 1</h4>
+				<p>выберите удобное время и оставьте заявку</p>
+			</div>
+
+			<div class="text">
+				<div class ="visite">
+					<img src="images/CosmLab.png" alt="косметическая лаборатория" class="animated">
+				</div>
+					<h4>ШАГ 2</h4>
+					<p>в назначенное время посетите нашу лабораторию</p>		
+			</div>
+
+			<div class="text">
+				<div class ="visite">
+					<img src="images/microscope.png" alt="микроскоп" class="animated">
+				</div>
+					<h4>ШАГ 3</h4>
+					<p>мы проведем диагностику состояния кожи/волос</p>	
+			</div>
+		</div>
+
+		<div class="howWork2">
+			<div class="text">
+				<div class ="visite">
+					<img src="images/formulation.png" alt="формулы" class="animated">
+				</div>
+				<h4>ШАГ 4</h4>
+				<p>разработаем рецептуры с учетом индивидуальной специфики кожи/волос</p>		
+			</div>
+
+			<div class="text">
+				<div class ="visite">
+					<img src="images/delivery.png" alt="Доставка" class="animated">
+				</div>
+				<h4>ШАГ 5</h4>
+				<p>изготовим и доставим необходимые продукты</p>		
+			</div>
+			<div class="text girl1">
+				<div>
+					<img src="images/girl1.png" alt="Девушка">
+				</div>
+				<button class="order" title="In-Beauty">ОСТАВИТЬ ЗАЯВКУ</button>
+			</div>
+		</div>
+
+		<div class="up"><i class="fa fa-arrow-circle-up"></i></div>
+	</div>
+
+	<div class = "back_3">
+		<div>
+			<h3><a name="develop"></a>ПОПРОБУЕМ ПРЯМО СЕЙЧАС...</h3>
+		</div>
+
+		<p class="chose">1. Выбираем активный компонент для приготовления крема...</p>
+		<p class="chose2 animated slideInLeft">2. Отлично! Актив добавлен! Выбираем еще один...</p>
+		<p class="chose5 animated slideInLeft">3. Жмем кнопку "ИЗГОТОВИТЬ КРЕМ"!</p>
+		<p class="chose3 animated slideInLeft">4. Внимание! Идет приготовление крема...</p>
+		<p class="chose4 animated slideInLeft"> ПОЗДРАВЛЯЕМ!</p>
+
+		<div class="wrap1">
+			<div class="wrap1_1">	
+				<div class="row_1">
+					<div class="col">
+						<div class="container">
+							<div class="front">
+								<div class="inner">
+									<img id="1a" src="images/1.png" alt="ГИАЛУРОНОВАЯ КИСЛОТА">
+									<p>ГИАЛУРОНОВАЯ КИСЛОТА</p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  <p>ГИАЛУРОНОВАЯ КИСЛОТА - природный увлажнитель...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="container">
+							<div class="front">
+									<div class="inner">
+										<img id="2a" src="images/2.png" alt="РОМАШКА">
+										<p>РОМАШКА</p>
+									</div>
+								</div>
+							<div class="back">
+								<div class="inner">
+								  <p>РОМАШКА - известный антисептик...</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="container">
+							<div class="front">
+									<div class="inner">
+										<img id="3a" src="images/3.png" alt="ПЕТРУШКА">
+										<p>ПЕТРУШКА</p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  <p>ПЕТРУШКА - натуральный отбеливатель...</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="container">
+							<div class="front">
+									<div class="inner">
+										<img id="4a" src="images/4.png" alt="АЛОЭ">
+										<p>АЛОЭ</p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  <p>АЛОЭ - исцеляющий эликсир...</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+			
+					<div class="col">
+						<div class="container">
+							<div class="front">
+								<div class="inner">
+									<img id="5a" src="images/5.png" alt="МИКРОВОДОРОСЛИ">
+									<p>МИКРОВОДОРОСЛИ</p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  <p>МИКРОВОДОРОСЛИ - омолаживающий актив...</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+			
+					<div class="col">
+						<div class="container">
+							<div class="front">
+								<div class="inner">
+									<img id="6a" src="images/6.png" alt="ВИНОГРАД">
+									<p>ВИНОГРАД</p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  <p>ВИНОГРАД - мощнейший антиоксидант...</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				
+					<div class="col">
+						<div class="container">
+							<div class="front">
+								<div class="inner">
+									<img id="7a" src="images/7.png" alt="МАСЛО АРГАНЫ">
+									<p>МАСЛО АРГАНЫ</p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  <p>МАСЛО АРГАНЫ - питательное и невесомое...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="container">
+							<div class="front">
+								<div class="inner">
+									<img id="8a" src="images/8.png" alt="ГРАНАТ">
+									<p>ГРАНАТ</p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  <p>ГРАНАТ - комплекс витаминов...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="container">
+							<div class="front">
+									<div class="inner">
+										<img id="9a" src="images/9.png" alt="ЦЕРАМИДЫ">
+										<p>ЦЕРАМИДЫ</p>
+								</div>
+							</div>
+							<div class="back">
+								<div class="inner">
+								  <p>ЦЕРАМИДЫ - восстановители защитной мантии кожи...</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				
+					<div class="chemistry">
+						<img src="images/chemistry.png" alt="химик">
+					</div>
+				</div>
+				
+					<div class="flask">
+						<img src="images/flask1.gif" alt="колба">
+					</div>
+			</div>
+				
+				
+			<div class="wrap1_2">	
+				<div class="formulate"><button id="formulate">ИЗГОТОВИТЬ КРЕМ</button></div>
+				<div class=totalInfo>
+				<div class = "cream"><iframe width="640" height="480" src="https://sketchfab.com/models/e9a2ab36f6d04ca3a616608d97e2726c/embed"  allow="autoplay; fullscreen; vr"></iframe>
+				</div>
+				<!-- <div class="cream"><img src="images/cream.png" alt="крем"></div> -->
+				<div>
+					<p class = "info a1 animated zoomIn"><span class='boldText'>КРЕМ</span> с гиалуроновой кислотой поддерживает водный баланс в клетках кожи,участвует в регенерации тканей,стимулирует выработку коллагена и эластина, способствует скорейшему заживлению повреждений.</p>
+					<p class = "info a2 animated zoomIn"><span class='boldText'>РОМАШКА </span> одно из самых замечательных целебных косметических средств, при этом ее смело назвать чудодейственным эликсиром красоты, молодости и здоровья. Ромашка в составе косметических средств увлажняет и питает кожу, успокаивает и восстанавливает, стимулирует регенерацию, лечит угревую сыпь и акне.</p>
+					<p class = "info a3 animated zoomIn"> <span class='boldText'>ПЕТРУШКА</span> лидер в осветлении пигментации и веснушек. Cнимает покраснение кожи и отечность, осветляет, балансирует, освежает и тонизирует. Крем для отбеливания кожи, предотвращает образования новых и борется с уже имеющимися пигментными пятнами, защищает кожу от вредного влияния окружающей среды и активно увлажняет, придает кожи однородный цвет и смягчает ее.</p>
+					<p class = "info a4 animated zoomIn"> <span class='boldText'>АЛОЭ </span> среди 200 веществ, содержащихся в нем, особый интерес представляет аллантоин – производное мочевой кислоты, обладающее свойством удерживать влагу. В листьях алоэ есть аскорбиновая кислота, ферменты, различные минералы, витамины группы В и Е. В соке насчитывается 18 аминокислот.</p>
+					<p class = "info a5 animated zoomIn"><span class='boldText'>МИКРОВОДОРОСЛИ </span> наполняют кожу жизненной силой и создает ощущение комфорта. Мультиламеллярная структура крема способствует глубокому проникновению активных ингредиентов и активизации восстановительных процессов. Крем повышает тонус, питает кожу, придает ей упругость.</p>
+					<p class = "info a6 animated zoomIn"> <span class='boldText'>ВИНОГРАД </span> предназначен для ухода за кожей лица в любое время суток. Он увлажняет, тонизирует и смягчает её. В его состав входит экстракт красного винограда. Активные компоненты способствуют сохранению упругости и эластичности кожи, восстанавливают её гидролипидный барьер, придают мягкость и эластичность.</p>
+					<p class = "info a7 animated zoomIn">Насыщенный мягкий крем с <span class='boldText'>МАСЛОМ АРГАНЫ </span> предназначен для сухой кожи, питает и увлажняет обезвоженную кожу. Оказывает долговременный увлажняющий эффект, омолаживает, повышая ее упругость и эластичность, улучшает качество и тон кожи.</p>
+					<p class = "info a8 animated zoomIn"><span class='boldText'>ГРАНАТ </span> для лица увлажняет, омолаживает кожу, делает ее гладкой и шелковистой. Стимулирует восстановительные процессы в коже, предупреждает возрастные изменения. Препятствует разрушению коллагена в зрелой коже, укрепляет сосуды и уменьшает глубину морщин.</p>
+					<p class = "info a9 animated zoomIn"><span class='boldText'>ЦЕРАМИДЫ </span> обеспечивают экстренное восстановление сухой и поврежденной кожи. При регулярном использовании уменьшает морщины, ускоряет регенерацию, делает кожу упругой. Крем предназначен для ежедневного ухода за обезвоженной кожей любого типа и возраста, увлажнения и восстановления кожи после процедур химического пилинга, для защиты кожи в холодное время года.</p>
+				</div>
+				</div>
+				<div class="formulateNew"><button id="formulateNew">ЕЩЕ ОДИН КРЕМ</button></div>
+			</div>		
+		</div>
+		<div class="up"><i class="fa fa-arrow-circle-up"></i></div>
+	</div>
+	
+	<div class="back_5">
+		<div class="animatiya wrap5">
+			<h3><a name="action"></a>ДЕЙСТВИЕ АКТИВНЫХ КОМПОНЕНТОВ НА КОЖУ</h3>
+			<iframe src="canvas/canvas.html">
+			</iframe>
+			<div>
+				<audio src="audio/music.mp3" controls loop></audio>
+			</div>
+		</div>
+		
+		<div class="up"><i class="fa fa-arrow-circle-up"></i></div>
+	</div>
+
+	<div class = "back_4">
+			<div>
+				<h3><a name="result"></a>РЕЗУЛЬТАТ</h3>
+			</div>
+	<div class="wrap2">
+		<div class="resDiv">
+			<div>
+				<p class="four">4 ЭФФЕКТА:</p>
+				<div class="sceneCarousel">
+					<div class="carousel">
+						<div class="carouselCell"><p><span class="number">1</span> - морщинки разглажены</p></div>
+						<div class="carouselCell"><p><span class="number">2</span> - кожа сияющая и увлажненная</p></div>
+						<div class="carouselCell"><p><span class="number">3</span> - поверхность ровная и гладкая</p></div>
+						<div class="carouselCell"><p><span class="number">4</span> - результат заметен через 14 дней</p></div>
+						<div class="carouselCell"></div>
+						<div class="carouselCell"></div>
+						<div class="carouselCell"></div>
+						<div class="carouselCell"></div>
+						<div class="carouselCell"></div>
+						<div class="carouselCell"></div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="icon">
+					<i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+					<p class="move">ДЕЙСТВИЕ КРЕМА</p>
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</div>
+				<div id = "wrinkle" onmousedown="return false"> <!--отмена действия по умолчанию -->
+
+					<div class="wrinkleDown">
+						<img src="images/face_2.jpg" alt="лицо" onmousedown="return false">
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="text2">
+			<button class="delivery" title="In-Beauty">ЗАБРАТЬ ИЗГОТОВЛЕННЫЙ КРЕМ</button>
+		</div>
+
+	</div>
+	<div class="up"><i class="fa fa-arrow-circle-up"></i></div>
+	</div>
+
+	<footer>
+		<div class="footer1">
+			<div class="foot1">
+				<p class="stay">ОСТАВАЙТЕСЬ С НАМИ НА СВЯЗИ</p>
+				<div class="footSocImage">
+					<a class = "footSoc" href="https://www.facebook.com/" title="Переход на сайт facebook" target="_blank"><img src="images/facebook.png" alt="значок facebook"></a>
+	 				<a class = "footSoc" href="https://www.twitter.com/" title="Переход на сайт twitter" target="_blank"><img src="images/twitter.png" alt="значок twitter"></a>
+	 				<a class = "footSoc" href="https://www.instagramm.com" title="Переход на сайт instagramm" target="_blank"><img src="images/instagramm.png" alt="значок instagramm"></a>
+	 				<a class = "footSoc" href="https://www.linkedin.com" title="Переход на сайт linkedin" target="_blank"><img src="images/linkedin.png" alt="значок linkedin"></a>
+	 			</div>
+  			</div>
+
+	 		<div class="footContact">
+	 			<p class="stay"><a name="contact"></a>КОНТАКТЫ</p>
+	 			<p class="in-BEAUTY">салон-магазин IN-BEAUTY</p>
+	 			<p class="adress">ул.Смирнова, 2    </p>
+				<p class="adress">г.Минск 220089</p>
+				<p class="adress">Беларусь </p>
+				<p class="adress">+375 29 615 50 49</p>
+				<p class="adress">Часы работы: пн-вс 9:00 - 20:00</p>
+	 		</div>
+ 		
+	 		<div class="footerForm">
+	 			<form>
+	 				<div class="subscribe">
+ 					<p><input type="email" name="myemail" placeholder="Ваш адрес электронной почты"></p>
+ 					<input type="Submit" value="ОК">
+ 				</div>
+	 				<p><input type="checkbox" name="check1" id="check1"> 
+					<label for="check1">хочу получать рассылку о новых выпусках косметики In-Beauty</label></p>
+
+	 			</form>
+	 			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A60a7f0fe34b4e3da157a8f81b3f89995949a070b8a0df7edfc19b99d7e737b90&amp;source=constructor" width="400" height="400"></iframe>
+	 		</div>
+ 		</div>
+	 	<div class="footer2">
+	 		<p>
+	 		 	Copyright © 2019 in-BEAUTY. Все права защищены.
+	 		</p>
+	 	</div>
+	</footer>
+	<script id="tooltipTemplate" type="text/template">
+		<hr>
+		<p class="tips">Мы приветствуем вас в нашем клубе "In-Beauty"! 
+		Записаться на удобное для Вас время можно по телефону +375 (29) 615-50-49</p>
+		<hr>
+	</script>
+
+	<script id="tooltipTemplate2" type="text/template">
+		<hr>
+		<p class="tips2">Если Вы хотите забрать изготовленный крем или получить консультацию косметолога и заказать разработку продукта по индивидуальной рецептуре - посетите нашу лабораторию по адресу : г.Минск, ул. Смирнова, 2</p>
+		<hr>
+	</script>
+
+</body>
+</html>
