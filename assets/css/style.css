@@ -151,6 +151,8 @@ padding:0px;
     #header h4 {
         line-height: 30px;
         font-size: 12px;
+        text-align: right;
+        font-style: italic;
         padding-bottom: 40px;
         text-transform: uppercase;
     }
@@ -162,11 +164,11 @@ padding:0px;
     background-color: rgba(237, 237, 237, 1);
 }
 
-    #services i {
-        font-size: 80px;
-        padding: 30px;
-        color: #FF2276;
-    }
+    
+.col-md-3 > img{
+    width: 50%;
+    height: 50%;
+}
 
     #services h4 {
         padding-bottom: 5px;
